@@ -23,5 +23,5 @@ jobs:
     - name: Step 3 - Use the Upload Template
         uses: actions/upload-artifact@v2
         with: 
-          name: assets-for-download
+          name: lib2654@1.0.0.zip
           path: downloads
