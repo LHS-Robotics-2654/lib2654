@@ -22,5 +22,5 @@ jobs:
       
     - uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
+        name: lib2654.zip
         path: ./*.zip
