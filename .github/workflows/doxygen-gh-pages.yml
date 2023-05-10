@@ -1,20 +1,24 @@
-name: Doxygen GitHub Pages Deploy Action
+name: publish
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
-
-permissions:
-  contents: write
-  pull-requests: write
+    branches: main
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
-      - name: "Doxygen"
-        run: |
-          sudo apt-get install -y doxygen
-          doxygen
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: set version
+        run: echo "PROJECT_NUMBER = `git describe --tags`" >> Doxyfile
+      - name: Generate Documentation
+        uses: mattnotmitt/doxygen-action@edge
+      - name: Publish generated content to GitHub Pages
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+        with:
+          dir: docs/html
+          branch: gh-pages
+          token: ${{ secrets.ACCESS_TOKEN }}
