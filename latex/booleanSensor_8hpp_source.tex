@@ -1,0 +1,44 @@
+\hypertarget{booleanSensor_8hpp_source}{}\doxysection{boolean\+Sensor.\+hpp}
+\label{booleanSensor_8hpp_source}\index{include/2654/abstract/booleanSensor.hpp@{include/2654/abstract/booleanSensor.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}stdint.h"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{// TODO: add time type}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{namespace }lib2654 \{}
+\DoxyCodeLine{8     \textcolor{keyword}{class }\mbox{\hyperlink{classlib2654_1_1BooleanSensor}{BooleanSensor}} \{}
+\DoxyCodeLine{9     \textcolor{keyword}{private}:}
+\DoxyCodeLine{14         \textcolor{keywordtype}{bool} sensorValue = \textcolor{keyword}{false};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{20         \textcolor{keywordtype}{bool} risingEdge;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26         \textcolor{keywordtype}{bool} fallingEdge;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{32         uint32\_t lastSensorTimestamp = 0;}
+\DoxyCodeLine{33     \textcolor{keyword}{public}:}
+\DoxyCodeLine{39         \mbox{\hyperlink{classlib2654_1_1BooleanSensor_af472b99c4c1ddfead1ecc86b706e4284}{BooleanSensor}}(\textcolor{keywordtype}{bool} uSensorValue);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{47         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlib2654_1_1BooleanSensor_aaa9ed2834e6d02be6d3d6515ef590da0}{get}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlib2654_1_1BooleanSensor_aefceb61661695efeacccc85bf49b7ae5}{getRisingEdge}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{63         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlib2654_1_1BooleanSensor_aef998243e05a13097fed427d624669a1}{getFallingEdge}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{70         uint32\_t \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a9e401729710af85090de6f2bf9cfcc9d}{getLastSensorReadingTimestamp}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{77         uint32\_t \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a5920b92e508464ae79017920cf6a858b}{getLastReadingAge}}();}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{83         \textcolor{keywordtype}{void} \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a7dc0f87b058a3020365e8c002fc537b5}{update}}() \{ this-\/>\mbox{\hyperlink{classlib2654_1_1BooleanSensor_a39e169737057f8c99e7e086b76c89e9d}{updateLogic}}(this-\/>\mbox{\hyperlink{classlib2654_1_1BooleanSensor_afe5a5c814abbb3b54bd6424640feaaf2}{updateSensor}}()); \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{91         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlib2654_1_1BooleanSensor_afe5a5c814abbb3b54bd6424640feaaf2}{updateSensor}}() \{ \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{98         \textcolor{keywordtype}{void} \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a39e169737057f8c99e7e086b76c89e9d}{updateLogic}}(\textcolor{keywordtype}{bool} uSensorValue);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100         \mbox{\hyperlink{classlib2654_1_1BooleanSensor}{\string~BooleanSensor}}();}
+\DoxyCodeLine{101     \};}
+\DoxyCodeLine{102 \} \textcolor{comment}{// namespace lib2654}}
+
+\end{DoxyCode}

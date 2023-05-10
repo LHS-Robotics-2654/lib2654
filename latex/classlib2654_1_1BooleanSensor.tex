@@ -1,0 +1,160 @@
+\hypertarget{classlib2654_1_1BooleanSensor}{}\doxysection{lib2654\+::Boolean\+Sensor Class Reference}
+\label{classlib2654_1_1BooleanSensor}\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlib2654_1_1BooleanSensor_af472b99c4c1ddfead1ecc86b706e4284}{Boolean\+Sensor}} (bool u\+Sensor\+Value)
+\begin{DoxyCompactList}\small\item\em Construct a new Boolean Sensor object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlib2654_1_1BooleanSensor_aaa9ed2834e6d02be6d3d6515ef590da0}{get}} ()
+\begin{DoxyCompactList}\small\item\em Get the most up to date value from the sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlib2654_1_1BooleanSensor_aefceb61661695efeacccc85bf49b7ae5}{get\+Rising\+Edge}} ()
+\begin{DoxyCompactList}\small\item\em Get the current sensor\textquotesingle{}s rising edge value this frame, indicating the sensor has moved from false to true. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classlib2654_1_1BooleanSensor_aef998243e05a13097fed427d624669a1}{get\+Falling\+Edge}} ()
+\begin{DoxyCompactList}\small\item\em Get the current sensor\textquotesingle{}s rising edge value this frame, indicating the sensor has moved from true to false. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a9e401729710af85090de6f2bf9cfcc9d}{get\+Last\+Sensor\+Reading\+Timestamp}} ()
+\begin{DoxyCompactList}\small\item\em Last sensor reading timestamp since program start (Either from pros\+::millis() or simulator timestamp) \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a5920b92e508464ae79017920cf6a858b}{get\+Last\+Reading\+Age}} ()
+\begin{DoxyCompactList}\small\item\em Get the age of the current sensor reading, or lag since last vexos sensor update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a7dc0f87b058a3020365e8c002fc537b5}{update}} ()
+\begin{DoxyCompactList}\small\item\em Called every frame to check for new sensor readings. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classlib2654_1_1BooleanSensor_afe5a5c814abbb3b54bd6424640feaaf2}{update\+Sensor}} ()
+\begin{DoxyCompactList}\small\item\em Implemented to get readings from robot or simulated sensors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlib2654_1_1BooleanSensor_a39e169737057f8c99e7e086b76c89e9d}{update\+Logic}} (bool u\+Sensor\+Value)
+\begin{DoxyCompactList}\small\item\em Called every sensor update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_af472b99c4c1ddfead1ecc86b706e4284}\label{classlib2654_1_1BooleanSensor_af472b99c4c1ddfead1ecc86b706e4284}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!BooleanSensor@{BooleanSensor}}
+\index{BooleanSensor@{BooleanSensor}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{BooleanSensor()}{BooleanSensor()}}
+{\footnotesize\ttfamily lib2654\+::\+Boolean\+Sensor\+::\+Boolean\+Sensor (\begin{DoxyParamCaption}\item[{bool}]{u\+Sensor\+Value }\end{DoxyParamCaption})}
+
+
+
+Construct a new Boolean Sensor object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Sensor\+Value} & Initial sensor value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_aaa9ed2834e6d02be6d3d6515ef590da0}\label{classlib2654_1_1BooleanSensor_aaa9ed2834e6d02be6d3d6515ef590da0}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!get@{get}}
+\index{get@{get}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily bool lib2654\+::\+Boolean\+Sensor\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the most up to date value from the sensor. 
+
+\begin{DoxyReturn}{Returns}
+true Current frame\textquotesingle{}s sensor reading is true 
+
+false Current frame\textquotesingle{}s sensor reading is false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_aef998243e05a13097fed427d624669a1}\label{classlib2654_1_1BooleanSensor_aef998243e05a13097fed427d624669a1}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!getFallingEdge@{getFallingEdge}}
+\index{getFallingEdge@{getFallingEdge}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{getFallingEdge()}{getFallingEdge()}}
+{\footnotesize\ttfamily bool lib2654\+::\+Boolean\+Sensor\+::get\+Falling\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current sensor\textquotesingle{}s rising edge value this frame, indicating the sensor has moved from true to false. 
+
+\begin{DoxyReturn}{Returns}
+true The sensor\textquotesingle{}s current value is false and the last value is true 
+
+false The sensor\textquotesingle{}s current value has remained the same as the last frame or is rising 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_a5920b92e508464ae79017920cf6a858b}\label{classlib2654_1_1BooleanSensor_a5920b92e508464ae79017920cf6a858b}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!getLastReadingAge@{getLastReadingAge}}
+\index{getLastReadingAge@{getLastReadingAge}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{getLastReadingAge()}{getLastReadingAge()}}
+{\footnotesize\ttfamily uint32\+\_\+t lib2654\+::\+Boolean\+Sensor\+::get\+Last\+Reading\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the age of the current sensor reading, or lag since last vexos sensor update. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t Age of sensor reading in milliseconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_a9e401729710af85090de6f2bf9cfcc9d}\label{classlib2654_1_1BooleanSensor_a9e401729710af85090de6f2bf9cfcc9d}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!getLastSensorReadingTimestamp@{getLastSensorReadingTimestamp}}
+\index{getLastSensorReadingTimestamp@{getLastSensorReadingTimestamp}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{getLastSensorReadingTimestamp()}{getLastSensorReadingTimestamp()}}
+{\footnotesize\ttfamily uint32\+\_\+t lib2654\+::\+Boolean\+Sensor\+::get\+Last\+Sensor\+Reading\+Timestamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Last sensor reading timestamp since program start (Either from pros\+::millis() or simulator timestamp) 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t Milliseconds since program start 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_aefceb61661695efeacccc85bf49b7ae5}\label{classlib2654_1_1BooleanSensor_aefceb61661695efeacccc85bf49b7ae5}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!getRisingEdge@{getRisingEdge}}
+\index{getRisingEdge@{getRisingEdge}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{getRisingEdge()}{getRisingEdge()}}
+{\footnotesize\ttfamily bool lib2654\+::\+Boolean\+Sensor\+::get\+Rising\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current sensor\textquotesingle{}s rising edge value this frame, indicating the sensor has moved from false to true. 
+
+\begin{DoxyReturn}{Returns}
+true The sensor\textquotesingle{}s current value is true and the last value is false 
+
+false The sensor\textquotesingle{}s current value has remained the same as the last frame or is falling 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_a7dc0f87b058a3020365e8c002fc537b5}\label{classlib2654_1_1BooleanSensor_a7dc0f87b058a3020365e8c002fc537b5}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!update@{update}}
+\index{update@{update}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void lib2654\+::\+Boolean\+Sensor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Called every frame to check for new sensor readings. 
+
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_a39e169737057f8c99e7e086b76c89e9d}\label{classlib2654_1_1BooleanSensor_a39e169737057f8c99e7e086b76c89e9d}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!updateLogic@{updateLogic}}
+\index{updateLogic@{updateLogic}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{updateLogic()}{updateLogic()}}
+{\footnotesize\ttfamily void lib2654\+::\+Boolean\+Sensor\+::update\+Logic (\begin{DoxyParamCaption}\item[{bool}]{u\+Sensor\+Value }\end{DoxyParamCaption})}
+
+
+
+Called every sensor update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+Sensor\+Value} & The new sensor value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib2654_1_1BooleanSensor_afe5a5c814abbb3b54bd6424640feaaf2}\label{classlib2654_1_1BooleanSensor_afe5a5c814abbb3b54bd6424640feaaf2}} 
+\index{lib2654::BooleanSensor@{lib2654::BooleanSensor}!updateSensor@{updateSensor}}
+\index{updateSensor@{updateSensor}!lib2654::BooleanSensor@{lib2654::BooleanSensor}}
+\doxysubsubsection{\texorpdfstring{updateSensor()}{updateSensor()}}
+{\footnotesize\ttfamily virtual bool lib2654\+::\+Boolean\+Sensor\+::update\+Sensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implemented to get readings from robot or simulated sensors. 
+
+\begin{DoxyReturn}{Returns}
+true The simulated or robot sensor\textquotesingle{}s reading is true 
+
+false The simulated or robot sensor\textquotesingle{}s reading is false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/2654/abstract/boolean\+Sensor.\+hpp\end{DoxyCompactItemize}
