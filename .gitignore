@@ -17,6 +17,6 @@ temp.errors
 .d/
 
 # doxygen
-
+docstemp/
 
 lib2654@*.zip
