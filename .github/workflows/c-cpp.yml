@@ -2,8 +2,10 @@ name: PROS Make
 
 on:
   push:
+    branches-ignore:
+      - 'gh-pages'
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   make:
