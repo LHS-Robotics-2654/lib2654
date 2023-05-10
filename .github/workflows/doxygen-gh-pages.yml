@@ -47,5 +47,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: html
+          folder: docs/html
           token: ${{ secrets.GITHUB_TOKEN }}
