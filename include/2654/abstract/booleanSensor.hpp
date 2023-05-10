@@ -31,6 +31,11 @@ namespace lib2654 {
 		 */
 		uint32_t lastSensorTimestamp = 0;
 	public:
+		/**
+		 * @brief Construct a new Boolean Sensor object
+		 * 
+		 * @param uSensorValue Initial sensor value
+		 */
 		BooleanSensor(bool uSensorValue);
 
 		/**
