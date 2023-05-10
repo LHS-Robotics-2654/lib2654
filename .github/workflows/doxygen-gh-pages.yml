@@ -44,7 +44,7 @@ jobs:
       - name: set version
         run: echo "PROJECT_NUMBER = `git describe --tags`" >> Doxyfile
       - name: Generate Documentation
-        uses: mattnotmitt/doxygen-action@1.9.6
+        uses: mattnotmitt/doxygen-action@1.9.5
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
