@@ -1,5 +1,6 @@
 var classlib2654_1_1BooleanSensor =
 [
+    [ "BooleanSensor", "classlib2654_1_1BooleanSensor.html#af472b99c4c1ddfead1ecc86b706e4284", null ],
     [ "get", "classlib2654_1_1BooleanSensor.html#aaa9ed2834e6d02be6d3d6515ef590da0", null ],
     [ "getFallingEdge", "classlib2654_1_1BooleanSensor.html#aef998243e05a13097fed427d624669a1", null ],
     [ "getLastReadingAge", "classlib2654_1_1BooleanSensor.html#a5920b92e508464ae79017920cf6a858b", null ],
