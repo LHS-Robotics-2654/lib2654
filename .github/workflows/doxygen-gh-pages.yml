@@ -6,12 +6,12 @@ on:
 
 jobs:
   # Build job
-  build:
+  # build:
 
   # Deploy job
   deploy:
     # Add a dependency to the build job
-    needs: build
+    # needs: build
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
