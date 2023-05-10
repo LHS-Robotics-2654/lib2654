@@ -16,4 +16,7 @@ temp.errors
 *.ini
 .d/
 
+# doxygen
+html/
+
 lib2654@*.zip
