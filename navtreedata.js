@@ -25,8 +25,6 @@
 var NAVTREE =
 [
   [ "lib2654", "index.html", [
-    [ "Building documentation", "md_markdown_include_buildingDocumentation.html", null ],
-    [ "Tutorials", "md_markdown_include_tutorials.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
