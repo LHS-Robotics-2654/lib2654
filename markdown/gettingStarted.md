@@ -1,6 +1,6 @@
 # Getting Started With lib2654
 
-## *References:*
+## References
 
 * [Official VSCode Documentation](https://code.visualstudio.com/docs) 
 * [Official PROS Documentation](https://pros.cs.purdue.edu/v5/index.html)
