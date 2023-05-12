@@ -26,6 +26,16 @@ var NAVTREE =
 [
   [ "lib2654", "index.html", [
     [ "Building documentation", "md_markdown_buildingDocumentation.html", null ],
+    [ "Development Log", "md_markdown_devlog.html", [
+      [ "Defining Issue/Mission statement", "md_markdown_devlog.html#autotoc_md3", null ]
+    ] ],
+    [ "Getting Started With lib2654", "md_markdown_gettingStarted.html", [
+      [ "<em>References:</em>", "md_markdown_gettingStarted.html#autotoc_md5", null ],
+      [ "Installation", "md_markdown_gettingStarted.html#autotoc_md6", null ]
+    ] ],
+    [ "References", "md_markdown_references.html", [
+      [ "Official documentation", "md_markdown_references.html#autotoc_md8", null ]
+    ] ],
     [ "Tutorials", "md_markdown_tutorials.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -43,7 +53,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"2654_8hpp_source.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
